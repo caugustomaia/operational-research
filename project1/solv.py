@@ -3,7 +3,7 @@ from ortools.graph import pywrapgraph
 
 # Nome e caminho do arquivo:
 
-fileName = 'instancias/instance4.txt'
+fileName = 'instancias/instance1.txt'
 
 def main():
 
@@ -66,9 +66,8 @@ def main():
       capacitiesSum += capacities[i]
 
 
-  # SEGUNDA ETAPA DE MODELAGEM, ATRIBUINDO CUSTO ZERO A TODOS OS ARCOS
-  # E ATRIBUINDO UM LIMITE SUPERIOR SEGURO COMO OFERTA E DEMANDA DO NÓ
-  # DE INÍCIO E NÓ ESCOADOURO.
+  # SEGUNDA ETAPA DE MODELAGEM: ATRIBUINDO UM LIMITE SUPERIOR SEGURO COMO OFERTA E DEMANDA DO NÓ
+  # DE INÍCIO E NÓ ESCOADOURO
   for i in range(verticesNumber):
       supplies[i] = 0
 
